@@ -41,11 +41,13 @@ vagrant ssh
 At that point you will be in a terminal inside you Vagrant machine. The source code located at your `Code` directory will be available in Vagrant at `code`.
 
 * Scaffold your SPA
+
+I am using the Angular generator for Yeoman. To invoke it, go with
 ```
 cd code
 yo angular projectName
 ```
-Where projectName will be replaced with the name of your project.
+where projectName will be replaced with the name of your project.
 
 * Testing from host
 
