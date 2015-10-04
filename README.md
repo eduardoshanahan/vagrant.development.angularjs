@@ -38,10 +38,17 @@ vagrant up
 vagrant ssh
 ```
 
-At that point you will be in a terminal inside you Vagrant machine. The source code located at your `Code` directory will be available in Vagrant.
+At that point you will be in a terminal inside you Vagrant machine. The source code located at your `Code` directory will be available in Vagrant at `code`.
 
 * Scaffold your SPA
 ```
+cd code
 yo angular projectName
 ```
 Where projectName will be replaced with the name of your project.
+
+* Testing from host
+
+If you want to try the application from your host browser, you will need to change /code/Gruntfile.js on the `connect | options | hostname` from `localhost` to `0.0.0.0`.
+
+Then it should be available in your [browser](http://192.168.65.2:9000).
